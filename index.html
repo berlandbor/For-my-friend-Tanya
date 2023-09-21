@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День Рождения Татьяны</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFEBE8;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFC3D0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF7C95;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FF5D80;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>С Днём Рождения, Татьяна!</h1>
+        <p>Пусть этот день принесёт много радости и счастья!</p>
+          <p>С наилучшими пожеланиями - твои друзья, семья Берлиных!</p>
+        <button onclick="playMusic()">Включить музыку 🎶</button>
+    </div>
+
+    <audio id="birthdayMusic" src="tat-yana-bulanova-zazhigay-tanya-s-dnem-rozhdeniya.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById('birthdayMusic');
+            music.play();
+        }
+    </script>
+</body>
+</html>
